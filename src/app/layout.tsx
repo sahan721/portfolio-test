@@ -4,14 +4,38 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/ui/BackToTop";
+import CommandPalette from "@/components/ui/CommandPalette";
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Sahan Nimnaka | Portfolio",
-  description: "Software Engineer Portfolio",
+  title: {
+    default: "Sahan Nimnaka | Software Engineer Portfolio",
+    template: "%s | Sahan Nimnaka",
+  },
+  description:
+    "Software Engineer portfolio showcasing projects, skills, and experience in web, mobile, and software development.",
+  metadataBase: new URL("https://sahannimnaka.dev"),
+  openGraph: {
+    title: "Sahan Nimnaka | Software Engineer Portfolio",
+    description:
+      "Software Engineer portfolio showcasing projects, skills, and experience in web, mobile, and software development.",
+    type: "website",
+    locale: "en_US",
+    url: "https://sahannimnaka.dev",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sahan Nimnaka | Software Engineer Portfolio",
+    description:
+      "Software Engineer portfolio showcasing projects, skills, and experience in web, mobile, and software development.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -20,12 +44,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
         <BackToTop />
+        <CommandPalette />
       </body>
     </html>
   );
