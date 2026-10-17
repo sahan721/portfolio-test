@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sahan Nimnaka — Developer Portfolio
+
+A personal developer portfolio built to showcase my projects, technical skills, education, and experience as a software developer.
+
+## Overview
+
+This portfolio provides an overview of my development journey, the technologies I work with, and the projects I have built. It serves as a central place to explore my work and connect with me professionally.
+
+## Features
+
+- **About Me** — An introduction to my background and development interests.
+- **Technical Skills** — A presentation of my development tools and technologies.
+- **Projects** — A collection of software projects with descriptions and repository links.
+- **Education** — Academic background and qualifications.
+- **Experience** — Relevant professional and project experience.
+- **Contact** — Ways to connect with me.
+
+The portfolio source also includes project-category filtering, animated project cards, and responsive interface components.
+
+## Technology Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js compatible with the project's dependencies
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sahan721/portfolio.git
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local URL shown in your terminal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run the production server after building:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Check `package.json` for the exact scripts and dependency requirements used by the current version.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project uses a Next.js application structure, with source files for page sections and components, public assets, and configuration files.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+portfolio/
+├── public/       # Static assets
+├── src/          # Application source code
+├── package.json  # Dependencies and scripts
+└── README.md     # Project documentation
+```
+
+## Live Portfolio
+
+The deployed website URL can be added here once confirmed:
+
+**Live Demo:** Add your verified portfolio URL.
+
+## Featured Projects
+
+Explore my GitHub repositories to discover my software development work:
+
+- [Air Guard — Air Quality Monitoring & Prediction](https://github.com/sahan721/air_guard-_back)
+- [MediSync — Hospital Staff Management System](https://github.com/sahan721/medisync2.3)
+- [BubbleBlizz — Flutter Beverage Ordering App](https://github.com/sahan721/BubbleBlizzApp-flutter-)
+
+Project descriptions, screenshots, and live demonstrations can be added as they are verified.
+
+## Contact
+
+- **GitHub:** [@sahan721](https://github.com/sahan721)
+
+Additional professional contact links can be added here.
+
+---
+
+*Built to showcase my software development projects, technical skills, and continued learning.*
